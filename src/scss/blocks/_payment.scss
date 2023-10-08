@@ -1,0 +1,54 @@
+.payment {
+  display: flex;
+  align-items: center;
+  gap: 0 38px;
+  max-width: 390px;
+  width: 100%;
+
+  @include r(1199) {
+    gap: 0 15px;
+  }
+
+  @include r(992) {
+    max-width: 100%;
+  }
+
+  @include r(470) {
+    flex-direction: column;
+    row-gap: 10px;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+
+    &--qiwi {
+      @include r(470) {
+        order: 1;
+      }
+    }
+  }
+
+  &__img {
+    margin-right: 10px;
+
+    @include r(1199) {
+      margin-right: 5px;
+    }
+
+    @include r(1199) {
+      margin-right: 10px;
+    }
+  }
+
+  &__company {
+    color: #c3c3c3;
+    font-size: 13px;
+    white-space: nowrap;
+
+    span {
+      display: inline-block;
+      text-transform: uppercase;
+    }
+  }
+}

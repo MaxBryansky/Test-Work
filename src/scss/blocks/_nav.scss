@@ -1,0 +1,41 @@
+.nav {
+  @extend %flex-base;
+
+  &__logo {
+    &__logo:hover {
+      opacity: 0.7;
+    }
+
+    @include r(768) {
+      width: 200px;
+    }
+  }
+
+  &__mobile {
+    display: none;
+    
+    @include r(992) {
+      display: block;
+      }
+  }
+
+  &__list {
+    @extend %flex-base;
+    column-gap: 60px;
+
+    @include r(992) {
+    display: none;
+    }
+  }
+
+  &__link {
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: $accent;
+    }
+  }
+}

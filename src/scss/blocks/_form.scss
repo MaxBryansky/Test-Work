@@ -1,0 +1,81 @@
+.form {
+  &__box {
+    display: flex;
+    align-items: flex-start;
+    column-gap: 30px;
+    margin-bottom: 32px;
+    border: none;
+
+    @include r(888) {
+      display: block;
+      margin-bottom: 15px;
+    }
+  }
+
+  &__input {
+    display: block;
+
+    @include r(888) {
+      margin-bottom: 15px;
+      max-width: 100%;
+      width: 100%;
+    }
+
+    &::placeholder {
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 1.2;
+      color: $page-bg;
+      transition: color 0.3s ease-in;
+    }
+
+    &:hover::placeholder {
+      color: $placeholder;
+    }
+
+    &:focus {
+      box-shadow: 0 0 0 3px rgba(35, 82, 222, 0.5);
+    }
+  }
+
+  &__involucre {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: none;
+    margin-bottom: 51px;
+
+    @include r(992) {
+      flex-direction: column;
+    }
+
+    @include r(768) {
+      margin-bottom: 25px;
+    }
+  }
+
+  &__button {
+    margin: 0 auto;
+    max-width: 370px;
+    width: 100%;
+    font-weight: 600;
+    font-size: 15px;
+    transition: box-shadow 0.3s ease-in;
+
+    &:focus {
+      box-shadow: 0 0 0 3px rgba(35, 82, 222, 0.5);
+    }
+
+    @include r(1199) {
+      max-width: 350px;
+    }
+
+    @include r(992) {
+      max-width: 318px;
+    }
+
+    @include r(375) {
+      max-width: 100%
+    }
+  }
+}

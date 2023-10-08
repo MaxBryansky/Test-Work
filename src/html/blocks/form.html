@@ -1,0 +1,18 @@
+<form class="form" action="#!">
+  <fieldset class="form__box">
+    @@include('select.html')
+  
+    <input class="form__input field" type="email" placeholder="Ваш e-mail" name="email" required>
+  
+    <input class="form__input field" type="text" placeholder="Ваше имя" name="name" required>
+  </fieldset>
+
+  <fieldset class="form__involucre">
+    @@include('range-input.html')
+    @@include('file-input.html')
+  </fieldset>
+
+  <button class="form__button btn">
+    ОТПРАВИТЬ
+  </button>
+</form>

@@ -1,0 +1,90 @@
+.dropdown {
+  position: relative;
+  max-width: 370px;
+  width: 100%;
+
+  @include r(888) {
+    margin-bottom: 15px;
+    max-width: 100%;
+  }
+
+  &__button {
+    position: relative;
+    display: block;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in, color 0.3s ease-in, border-radius 0.3s ease-in, border-color 0.3s ease-in;
+    text-align: left;
+
+    &:focus {
+      border-radius: 3px 3px 0px 0px;
+      border-color: #3D4050;
+      background-color: rgba(61, 64, 80, 0.85);
+      color: #ffffff;
+      box-shadow: none;
+    }
+
+    @include r(888) {
+      max-width: 100%;
+    }
+  }
+
+  &__icon {
+    content: "";
+    position: absolute;
+    right: 11px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: block;
+    width: 20px;
+    height: 20px;
+    @extend %background;
+    pointer-events: none;
+
+    &--arowd {
+      background-image: url("./../images/icons/ar-d.svg");
+    }
+
+    &--arowup {
+      background-image: url("./../images/icons/ar-up.svg");
+    }
+  }
+
+  &__list {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    max-width: 370px;
+    max-height: 180px;
+    width: 100%;
+    padding: 5px 10px 0;
+    text-align: left;
+    border-radius: 3px;
+    border: 1px solid #3D4050;
+    background-color: rgba(39, 39, 51, 0.90);
+    border-top: none;
+
+    &--visible {
+      display: block;
+    }
+
+    @include r(888) {
+      max-width: 100%;
+    }
+  }
+  
+  &__item {
+    line-height: 34px;
+    transition: color 0.3s ease-in;
+    cursor: pointer;
+
+    &:hover{
+      color: $accent;
+    }
+  }
+
+  &__input-hidden {
+    display: none;
+  }
+
+
+}

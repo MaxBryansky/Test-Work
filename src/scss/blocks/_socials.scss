@@ -1,0 +1,39 @@
+.social {
+  display: flex;
+  align-items: center;
+  column-gap: 48px;
+  max-width: 310px;
+  width: 100%;
+
+  @include r(1199) {
+    gap: 0 10px;
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    font-size: 13px;
+    transition: color 0.3s ease;
+
+    svg {
+      transition: fill 0.3s ease;
+    }
+
+    &:hover {
+      color: $accent;
+
+      svg path {
+        fill: #286690;
+      }
+    }
+
+    @include r(1199) {
+      column-gap: 5px;
+    }
+
+    @include r(992) {
+      column-gap: 10px;
+    }
+  }
+}

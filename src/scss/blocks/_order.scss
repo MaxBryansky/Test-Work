@@ -1,0 +1,73 @@
+.order {
+  padding: 130px 0 75px;
+  @extend %background;
+
+  @include r(1199) {
+    padding: 90px 0 60px;
+  }
+
+  @include r(992) {
+    padding: 60px 0 60px;
+  }
+
+  @include r(768) {
+    padding: 50px 0 40px;
+  }
+
+  &__wrapper {
+    text-align: center;
+  }
+
+  &__title {
+    margin-bottom: 30px;
+    font-size: 36px;
+    font-weight: 800;
+    text-transform: uppercase;
+
+    span {
+      color: $accent;
+    }
+
+    @include r(992) {
+      margin-bottom: 25px;
+      font-size: 30px;
+    }
+
+    @include r(768) {
+      margin-bottom: 20px;
+      font-size: 26px;
+    }
+  }
+
+  &__subtitle {
+    margin-bottom: 80px;
+    color: $muted;
+
+    @include r(992) {
+      margin-bottom: 50px;
+    }
+  }
+
+  &__scheme {
+    margin-bottom: 80px;
+
+    @include r(992) {
+      margin-bottom: 50px;
+    }
+  }
+
+
+  &__form {
+    padding-bottom: 75px;
+
+    @include r(1199) {
+      padding-bottom: 60px;
+    }
+
+    @include r(992) {
+      padding-bottom: 0;
+    }
+  }
+}
+
+

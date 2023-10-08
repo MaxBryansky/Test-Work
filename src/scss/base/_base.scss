@@ -1,0 +1,46 @@
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+  position: relative;
+  font-family: $font-main;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.2;
+  font-style: normal;
+	background-color: $page-bg;
+	color: $text-color;
+}
+
+.container {
+	padding: $container-padding;
+	max-width: $container-width;
+	margin: 0 auto;
+}
+
+a {
+  color: $text-color;
+  outline: transparent;
+  transition: box-shadow 0.3s ease-in;
+
+  &:focus {
+    box-shadow: 0 0 0 3px rgba(35, 82, 222, 0.5);
+  }
+}
+
+.field {
+  max-width: 370px;
+  width: 100%;
+  padding: 12px 36px 12px 10px;
+  border-radius: 3px;
+  border: 1px solid #fff;
+  background-color: rgba(255, 255, 255, 0.85);
+  color: $page-bg;
+  outline: transparent;
+  transition: box-shadow 0.3s ease-in;
+}
+
+.active {
+  color: $accent;
+}

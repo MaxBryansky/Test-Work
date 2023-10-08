@@ -1,0 +1,55 @@
+.file {
+  position: relative;
+  display: block;
+  max-width: 370px;
+  width: 100%;
+  padding: 12px 97px 12px 120px;
+  color: $page-bg;
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+  outline: transparent;
+  border-radius: 3px;
+  border: 2px solid #3e9cdc;
+  background: #ffffff;
+  transition: box-shadow 0.3s ease-in, color 0.3s ease-in;
+
+  @include r(1199) {
+    max-width: 320px;
+    padding: 12px 65px 12px 90px;
+  }
+
+  @include r(375) {
+    max-width: 100%;
+    padding: 12px 45px 12px 55px;
+  }
+
+  &__img {
+    position: absolute;
+    top: 50%;
+    left: 93px;
+    transform: translateY(-50%);
+    transition: fill 0.3s ease-in;
+
+    @include r(1199) {
+      left: 70px;
+    }
+
+    @include r(375) {
+      left: 50px;
+    }
+  }
+
+  &:hover {
+    color: $placeholder;
+
+    .file__img path{
+      fill: $placeholder;
+    }
+  }
+
+  &:focus {
+    box-shadow: 0 0 0 3px rgba(35, 82, 222, 0.5);
+  }
+
+}

@@ -1,0 +1,28 @@
+$container-width: 1200px;
+$container-padding: 0 15px;
+
+$font-main: "Lato", sans-serif;
+
+$page-bg: #272733;
+$text-color: #ffffff;
+$accent: #3e9cdc;
+$btnMore: #2a2b30;
+$black: #000000;
+$muted: #bbbbbb;
+$placeholder: #0000ff;
+
+$laptop-size: 1199px;
+$tablet-size: 959px;
+$mobile-size: 599px;
+
+%flex-base {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+%background {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}

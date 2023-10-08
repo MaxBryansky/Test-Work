@@ -1,0 +1,107 @@
+.scheme {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 30px;
+
+  @include r(1199) {
+    gap: 25px;
+  }
+
+  @include r(888) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @include r(576) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include r(375) {
+    display: block;
+  }
+
+  &__item {
+    position: relative;
+    max-width: 210px;
+    width: 100%;
+
+    @include r(1199) {
+      max-width: 200px;
+    }
+
+    @include r(888) {
+      max-width: 100%;
+    }
+
+    &:not(:last-child)::after {
+      content: '';
+      position: absolute;
+      width: 112px;
+      height: 6px;
+      top: 47px;
+      right: -70px;
+      background-image: url("./../../images/icons/points.svg");
+      @extend %background;
+
+      @include r(1199) {
+        width: 80px;
+        right: -54px;
+      }
+
+      @include r(992) {
+        width: 44px;
+        right: -35px;
+      }
+
+      @include r(888) {
+        display: none;
+      }
+    }
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 11px;
+  }
+
+  &__icon {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    background-color: #3E9CDC;
+    border: 5px solid #286690;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+
+    @include r(1199) {
+      width: 90px;
+      height: 90px;
+    }
+  }
+
+  &__img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    @include r(1199) {
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+  &__descr {
+    max-width: 188px;
+    font-size: 16px;
+    min-height: 44px;
+
+    @include r(375) {
+      max-width: 100%;
+    }
+  }
+}
