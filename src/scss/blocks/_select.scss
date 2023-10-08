@@ -31,6 +31,7 @@
   &__icon {
     content: "";
     position: absolute;
+    z-index: 2;
     right: 11px;
     top: 50%;
     transform: translateY(-50%);
