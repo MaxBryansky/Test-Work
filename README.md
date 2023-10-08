@@ -7,4 +7,4 @@
 - JavaScript
 - Gulp
 
-Can you view [project] (https://maxbryansky.github.io/Test-work/)
+Can you view [project] (https://maxbryansky.github.io/Test-Work/)
