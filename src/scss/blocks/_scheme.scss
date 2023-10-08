@@ -39,7 +39,7 @@
       height: 6px;
       top: 47px;
       right: -70px;
-      background-image: url("./../../images/icons/points.svg");
+      background-image: url("./../images/icons/points.svg");
       @extend %background;
 
       @include r(1199) {
