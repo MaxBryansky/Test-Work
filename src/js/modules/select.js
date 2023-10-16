@@ -22,22 +22,6 @@ function select() {
         dropDownList.classList.remove('dropdown__list--visible');
       })
     });
-
-    // document.addEventListener('click', function (e) {
-    //   if (e.target !== dropDownBtn) {
-    //     dropDownList.classList.remove('dropdown__list--visible');
-    //     arrow.classList.toggle('dropdown__icon--arowup');
-    //     arrow.classList.toggle('dropdown__icon--arowd');
-    //   }
-    // })
-
-    // document.addEventListener('keydown', function (e) {
-    //   if (e.key === 'Escape') {
-    //     dropDownList.classList.remove('dropdown__list--visible');
-    //     arrow.classList.toggle('dropdown__icon--arowup');
-    //     arrow.classList.toggle('dropdown__icon--arowd');
-    //   }
-    // })
   })
 };
 
