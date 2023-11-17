@@ -1,6 +1,6 @@
 # Test Work
 
-Тестовое задание на должность HTML-developer
+Макет для практики
 
 - HTML 5
 - CSS 3
